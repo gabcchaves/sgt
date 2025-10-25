@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+
+    protected $connection = "sqlite";
+
     // Operações de inserção.
     public function up(): void
     {

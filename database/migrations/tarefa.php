@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('tarefa', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->boolean('completo')->unique();
+            $table->boolean('completo');
         });
     }
 

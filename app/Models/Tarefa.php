@@ -4,28 +4,10 @@
 
 namespace App\Models;
 
-class Tarefa
+// Invocar o ORM Eloquent.
+use Illuminate\Database\Eloquent\Model;
+
+class Tarefa extends Model
 {
-    public function criar(): array
-    {
-        return null;
-    }
-
-
-    public function buscar(): array
-    {
-        return null;
-    }
-
-
-    public function atualizar(): array
-    {
-        return null;
-    }
-
-
-    public function deletar(): array
-    {
-        return null;
-    }
+    protected $fillable = ["titulo", "completo"];
 }

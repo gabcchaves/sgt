@@ -9,7 +9,9 @@ class TarefaController extends Controller
     // Ler todas as tarefas.
     public function listar()
     {
-        return Tarefa::all();
+        $tarefas = Tarefa::all();
+
+        return view("tarefas", ["tarefas" => $tarefas]);
     }
 
 

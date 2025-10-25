@@ -6,19 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    // Operações de inserção.
+    /**
+     * Run the migrations.
+     */
     public function up(): void
     {
-        Schema::create('tarefa', function (Blueprint $table) {
+        Schema::create('tarefas', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-            $table->boolean('completo');
+            $table->timestamps();
         });
     }
 
-    // Reversão de inserções.
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::dropIfExists('tarefa');
+        Schema::dropIfExists('tarefas');
     }
 };

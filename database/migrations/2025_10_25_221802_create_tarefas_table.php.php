@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("titulo");
             $table->boolean("completo");
+            $table->timestamps();
         });
     }
 
